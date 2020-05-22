@@ -71,25 +71,19 @@
                 <div>
                     <input type="radio" name="grup1" value="minimizar" id="Minim">
                     <label for="Minim">
-                        <div for="Minim" style="background:#AC67E8" class="boton1" for='minimizar'>
-                            m
-                        </div>
+                        <img src="img/botonCerrar.png"    alt="">
                     </label>
                 </div>
                 <div >
                     <input type="radio" name="grup1" value="maximisar"  id="max">
                     <label for="max">
-                        <div style="background:#FE97FC" class="boton1" for='minimizar'>
-                            M
-                        </div>
+                        <img src="img/botonMaximisar.png" alt="">
                     </label>
                 </div>
                 <div >
                     <input type="radio" name="grup1" value="cerrar" id="cerrar">
                     <label for="cerrar">
-                        <div style="background:#4A4A4A" class="boton1" for='minimizar'>
-                            c
-                        </div>
+                        <img src="img/botonMinimizar.png" alt="">
                     </label>
                 </div>
             </div>
@@ -106,25 +100,19 @@
                 <div>
                     <input type="radio" name="grup2" value="minimizar" id="Minim2">
                     <label for="Minim2">
-                        <div for="Minim" style="background:#AC67E8" class="boton1" for='minimizar'>
-                            m
-                        </div>
+                        <img src="img/botonCerrar.png"    alt="">
                     </label>
                 </div>
                 <div >
                     <input type="radio" name="grup2" value="maximisar"  id="max2">
                     <label for="max2">
-                        <div style="background:#FE97FC" class="boton1" for='minimizar'>
-                            M
-                        </div>
+                        <img src="img/botonMaximisar.png" alt="">
                     </label>
                 </div>
                 <div >
                     <input type="radio" name="grup2" value="cerrar" id="cerrar2">
                     <label for="cerrar2">
-                        <div style="background:#4A4A4A" class="boton1" for='minimizar'>
-                            c
-                        </div>
+                        <img src="img/botonMinimizar.png" alt="">
                     </label>
                 </div>
             </div>
@@ -141,25 +129,19 @@
                 <div>
                     <input type="radio" name="grup3" value="minimizar" id="Minim3">
                     <label for="Minim3">
-                        <div for="Minim" style="background:#AC67E8" class="boton1" for='minimizar'>
-                            m
-                        </div>
+                        <img src="img/botonCerrar.png"    alt="">
                     </label>
                 </div>
                 <div >
                     <input type="radio" name="grup3" value="maximisar"  id="max3">
                     <label for="max3">
-                        <div style="background:#FE97FC" class="boton1" for='minimizar'>
-                            M
-                        </div>
+                        <img src="img/botonMaximisar.png" alt="">
                     </label>
                 </div>
                 <div >
                     <input type="radio" name="grup3" value="cerrar" id="cerrar3">
                     <label for="cerrar3">
-                        <div style="background:#4A4A4A" class="boton1" for='minimizar'>
-                            c
-                        </div>
+                        <img src="img/botonMinimizar.png" alt="">
                     </label>
                 </div>
             </div>
