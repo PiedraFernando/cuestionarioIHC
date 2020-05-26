@@ -31,31 +31,45 @@
                     <span>Ingrese su edad</span>
                     <span class="requerido">*</span>
                 </div>
-                <input name="edad" type="text" placeholder="Tu respuesta" required>
+                <input name="edad" type="number" placeholder="Tu respuesta" required>
             </div>
         </div>
         <div class="preguntaContainer" style="background:#2471A3">
             <div>
-                <div class="pregunta">
-                    <span>Ingrese su sexo</span>
+                <div class="pregunta" required>
+                    <span>Ingrese su género</span>
                     <span class="requerido">*</span>
                 </div>
-                <input name="sexo" type="text" placeholder="Tu respuesta" required>
+                <select style="width: 100%; padding: 8px;" name="sexo">
+                    <option disabled selected>Selecciona una opción</option>
+                    <option>Hombre</option>
+                    <option>Mujer</option>
+                    <option>Otro</option>
+                    <option>Prefiero no responder</option>
+                </select>
             </div>
         </div>
         <div class="preguntaContainer" style="background:#17A589">
             <div>
                 <div class="pregunta">
-                    <span>Grado de estudios</span>
+                    <span>Grado de estudios alcanzados</span>
                     <span class="requerido">*</span>
                 </div>
-                <input name="estudios" type="text" placeholder="Tu respuesta" required>
+                <select style="width: 100%; padding: 8px;" name="estudios" required>
+                    <option disabled selected>Selecciona una opción</option>
+                    <option>Ninguno</option>
+                    <option>Preescolar</option>
+                    <option>Primaria</option>
+                    <option>Secundaria</option>
+                    <option>Media superior</option>
+                    <option>Superior</option>
+                </select>
             </div>
         </div>
         <div class="preguntaContainer" style="background:#229954">
             <div>
                 <div class="pregunta">
-                    <span>Como aprendio a utilizar la computadora</span>
+                    <span>¿Cómo aprendió a utilizar la computadora?</span>
                     <span class="requerido">*</span>
                 </div>
                 <input name="aprendisaje" type="text" placeholder="Tu respuesta" required>
@@ -65,7 +79,7 @@
         <div class="preguntaContainer" style="background:#CA6F1E">
             <div>
                 <div class="pregunta">
-                    <span>¿Que boton usaria para minimisar una pestaña?</span>
+                    <span>¿Qué botón usaría para minimizar una pestaña?</span>
                     <span class="requerido">*</span>
                 </div>
                 <div class="radioContainer">
@@ -94,7 +108,7 @@
         <div class="preguntaContainer" style="background:#717D7E">
             <div>
                 <div class="pregunta">
-                    <span>¿Que boton usaria para maximisar una pestaña?</span>
+                    <span>¿Qué botón usaría para maximizar una pestaña?</span>
                     <span class="requerido">*</span>
                 </div>
                 <div class="radioContainer">
@@ -123,7 +137,7 @@
         <div class="preguntaContainer" style="background:#2C3E50">
             <div>
                 <div class="pregunta">
-                    <span>¿Que boton usaria para cerrar una pestaña?</span>
+                    <span>¿Qué botón usaría para cerrar una pestaña?</span>
                     <span class="requerido">*</span>
                 </div>
                 <div class="radioContainer">
