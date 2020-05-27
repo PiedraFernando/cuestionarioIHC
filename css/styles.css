@@ -67,11 +67,11 @@ h1{
 .boton{
     background-color: #0075DE;
     margin: 5px 20px;
-    padding: 10px;
-    border-radius: 5px;
-    box-shadow: 1px 1px rgba(0, 0, 0, .5);
-    font-size: 18px;
+    padding: 10px 50px;
+    border-radius: 40px;
+    font-size: 58px;
     color: white;
+    box-shadow: 5px 10px #888888;;
 }
 .radioContainer{
     display: flex;
@@ -87,4 +87,9 @@ h1{
     text-align: center;
     padding: 5px;
     color: white;
+}
+.subTitulo{
+    padding-bottom: 100px;
+    color: white;
+    font-size: 50px;
 }

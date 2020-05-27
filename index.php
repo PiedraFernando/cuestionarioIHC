@@ -22,7 +22,7 @@
                 <div class="pregunta">
                     <span>Ingrese su nombre</span>
                 </div>
-                <input name="nombre" type="text" placeholder="Tu respuesta">
+                <input name="nombre" type="text" placeholder="Tu respuesta" min="0" max="120">
             </div>
         </div>
         <div class="preguntaContainer" style="background:#8E44AD">
@@ -72,7 +72,14 @@
                     <span>¿Cómo aprendió a utilizar la computadora?</span>
                     <span class="requerido">*</span>
                 </div>
-                <input name="aprendisaje" type="text" placeholder="Tu respuesta" required>
+                <select style="width: 100%; padding: 8px;" name="sexo">
+                    <option disabled selected>Selecciona una opción</option>
+                    <option>Siendo autodidacta (Videos, artículos, etc)</option>
+                    <option>Curso intensivo</option>
+                    <option>Con ayuda de un tutor/asesor</option>
+                    <option>Curiosidad</option>
+                    <option>Otra</option>
+                </select>
             </div>
         </div>
 
@@ -165,7 +172,7 @@
 
         <div class="preguntaContainer" style="background:#5DADE2">
             <div class="buttonContainer">
-                <input type="submit" value="Enviar" class="boton">
+                <button type="submit" class="boton">Enviar</button>
             </div>
         </div>
     </form>
