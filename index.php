@@ -11,31 +11,44 @@
 </head>
 <body>
     <form action="solicitud.php" method="post" style="width: 100%; height: 100%;">
-        <div class="bienvenida">
+        <div class="bienvenida" id="bienvenida">
             <div>
                 <div class="cortina"></div>
-                <h1>Cuestionario para IHC</h1>
+                <h1>Cuestionario para la interacción humano-computadora</h1>
+                <a class="boton_siguiente" href="#nombre" >¡Comencemos!</a>
             </div>
         </div>
-        <div class="preguntaContainer" style="background:#CB4335">
+
+        <!-- SECCION DE NOMBRE -->
+        <div class="preguntaContainer" style="background:#CB4335" id="nombre">
             <div>
                 <div class="pregunta">
                     <span>Ingrese su nombre</span>
                 </div>
-                <input name="nombre" type="text" placeholder="Tu respuesta" min="0" max="120">
+                <input name="nombre" type="text" placeholder="Tu respuesta" min="0" max="120" 
+                style="width:100%; border:2px solid #aaa; border-radius:4px;box-sizing:border-box;">
+                <a class="boton_siguiente" href="#edad">Siguiente pregunta</a>
             </div>
         </div>
-        <div class="preguntaContainer" style="background:#8E44AD">
+
+        <!-- SECCION DE EDAD -->
+        <div class="preguntaContainer" style="background:#8E44AD" id="edad" style="border: 1px solid black;">
             <div>
+                <a class="boton_anterior" href="#nombre">Pregunta anterior</a>
                 <div class="pregunta">
                     <span>Ingrese su edad</span>
                     <span class="requerido">*</span>
                 </div>
-                <input name="edad" type="number" placeholder="Tu respuesta" required>
+                <input name="edad" type="number" placeholder="Tu respuesta" required
+                style="width:100%; border:2px solid #aaa; border-radius:4px;box-sizing:border-box;">
+                <a class="boton_siguiente" href="#genero">Siguiente pregunta</a>
             </div>
         </div>
-        <div class="preguntaContainer" style="background:#2471A3">
+
+        <!-- SECCION DE GENERO -->
+        <div class="preguntaContainer" style="background:#2471A3" id="genero">
             <div>
+                <a class="boton_anterior" href="#edad">Pregunta anterior</a>
                 <div class="pregunta" required>
                     <span>Ingrese su género</span>
                     <span class="requerido">*</span>
@@ -47,10 +60,14 @@
                     <option>Otro</option>
                     <option>Prefiero no responder</option>
                 </select>
+                <a class="boton_siguiente" href="#estudios">Siguiente pregunta</a>
             </div>
         </div>
-        <div class="preguntaContainer" style="background:#17A589">
+
+        <!-- SECCION DE ESTUDIOS -->
+        <div class="preguntaContainer" style="background:#17A589" id="estudios">
             <div>
+                <a class="boton_anterior" href="#genero">Pregunta anterior</a>
                 <div class="pregunta">
                     <span>Grado de estudios alcanzados</span>
                     <span class="requerido">*</span>
@@ -64,10 +81,14 @@
                     <option>Media superior</option>
                     <option>Superior</option>
                 </select>
+                <a class="boton_siguiente" href="#aprender">Siguiente pregunta</a>
             </div>
         </div>
-        <div class="preguntaContainer" style="background:#229954">
+
+        <!-- SECCION DE APRENDIZAJE -->
+        <div class="preguntaContainer" style="background:#229954" id="aprender">
             <div>
+                <a class="boton_anterior" href="#estudios">Pregunta anterior</a>
                 <div class="pregunta">
                     <span>¿Cómo aprendió a utilizar la computadora?</span>
                     <span class="requerido">*</span>
@@ -80,11 +101,14 @@
                     <option>Curiosidad</option>
                     <option>Otra</option>
                 </select>
+                <a class="boton_siguiente" href="#minimizar" >Siguiente pregunta</a>
             </div>
         </div>
 
-        <div class="preguntaContainer" style="background:#CA6F1E">
+        <!-- SECCION DE MINIMIZAR -->
+        <div class="preguntaContainer" style="background:#CA6F1E" id="minimizar">
             <div>
+                <a class="boton_anterior" href="#aprender">Pregunta anterior</a>
                 <div class="pregunta">
                     <span>¿Qué botón usaría para minimizar una pestaña?</span>
                     <span class="requerido">*</span>
@@ -109,11 +133,14 @@
                         </label>
                     </div>
                 </div>
+                <a class="boton_siguiente" href="#maximizar" >Siguiente pregunta</a>
             </div>
         </div>
 
-        <div class="preguntaContainer" style="background:#717D7E">
+        <!-- SECCION DE MAXIMIZAR -->
+        <div class="preguntaContainer" style="background:#717D7E" id="maximizar">
             <div>
+                <a class="boton_anterior" href="#minimizar">Pregunta anterior</a>
                 <div class="pregunta">
                     <span>¿Qué botón usaría para maximizar una pestaña?</span>
                     <span class="requerido">*</span>
@@ -138,11 +165,14 @@
                         </label>
                     </div>
                 </div>
+                <a class="boton_siguiente" href="#cerrar" >Siguiente pregunta</a>
             </div>
         </div>
 
-        <div class="preguntaContainer" style="background:#2C3E50">
+        <!-- SECCION DE CERRAR -->
+        <div class="preguntaContainer" style="background:#2C3E50" id="cerrar">
             <div>
+                <a class="boton_anterior" href="#maximizar">Pregunta anterior</a>
                 <div class="pregunta">
                     <span>¿Qué botón usaría para cerrar una pestaña?</span>
                     <span class="requerido">*</span>
@@ -166,15 +196,14 @@
                             <img src="img/botonMinimizar.png" alt="">
                         </label>
                     </div>
+                    
                 </div>
-            </div>
-        </div>
-
-        <div class="preguntaContainer" style="background:#5DADE2">
-            <div class="buttonContainer">
                 <button type="submit" class="boton">Enviar</button>
             </div>
         </div>
     </form>
 </body>
 </html>
+
+
+
